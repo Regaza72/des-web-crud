@@ -25,4 +25,6 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Guardar Notificación</button>
+    
+    <a href="<?php echo site_url('notificacion'); ?>" class="btn btn-secondary">Regresar a Lista de Notificaciones</a>
 </form>

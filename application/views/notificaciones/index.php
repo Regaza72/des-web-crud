@@ -171,6 +171,7 @@
                 <td>
                     <a href="<?php echo site_url('Notificacion/edit/'.$notificacion['id']); ?>" class="btn btn-warning">Editar</a>
                     <a href="<?php echo site_url('Notificacion/delete/'.$notificacion['id']); ?>" class="btn btn-danger">Eliminar</a>
+                    <a href="<?php echo site_url('estaciones'); ?>" class="btn btn-primary">Regresar a Estaciones</a>
                 </td>
             </tr>
         <?php endforeach; ?>
