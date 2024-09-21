@@ -76,7 +76,7 @@
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 600;
-            padding: 10px 20px;
+            padding: 10px 10px;
         }
         .btn-warning {
             background-color: #ffb236;
@@ -195,6 +195,8 @@
                             <button id="reset-<?= $estacion['ID']; ?>" class="btn-control">
                                 <i class="fas fa-redo"></i>
                             </button>
+                            <!-- Botón para gestionar notificaciones -->
+                            <a href="<?php echo site_url('notificacion'); ?>" class="btn btn-primary">Gestionar Notificaciones</a>
                         </div>
                         
                         <a href="<?= site_url('estaciones/edit/'.$estacion['ID']); ?>" class="btn btn-warning">Editar</a>
@@ -358,6 +360,8 @@ function startTimer(duration, display, estacionId) {
         function cobrar(estacionId){
             stopTimer(estacionId);
         }
+
+        
 
         <?php foreach ($estaciones as $estacion): ?>
             (function() {
