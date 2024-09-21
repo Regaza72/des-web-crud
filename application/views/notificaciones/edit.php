@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Notificacion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
 <h2>Editar Notificación</h2>
 
 <form action="<?php echo site_url('Notificacion/update/'.$notificacion['id']); ?>" method="post">
@@ -27,3 +48,12 @@
     <button type="submit" class="btn btn-primary">Actualizar Notificación</button>
     <a href="<?php echo site_url('notificacion'); ?>" class="btn btn-secondary">Regresar a Lista de Notificaciones</a>
 </form>
+    
+</body>
+</html>
+
+
+
+
+
+
